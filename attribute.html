@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-style {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="img-id" src="https://www.w3schools.com/html/pic_trulli.jpg">
+</body>
+<script>
+    const imgEl = document.querySelector('img');
+    imgEl.hasAttribute('id');
+    let attrValue = imgEl.getAttribute('src');
+    console.log(attrValue);
+
+    imgEl.setAttribute('src', 'https://www.w3schools.com/html/img_girl.jpg');
+    imgEl.setAttribute('class', 'image-style');
+</script>
+
+</html>
